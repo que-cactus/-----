@@ -50,7 +50,6 @@ div.innerHTML = `<article class="article news-list__article">
 const smallNewsContainer = document.querySelector('.aside')
 
 const smallNews = data.items.splice(6, 6 + 2)
-console.log(smallNews)
 const convertDate = (date) => {
    return new Date(date).toLocaleDateString('ru-RU', {month: 'long', day: 'numeric'}).toUpperCase();
 }
